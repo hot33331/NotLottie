@@ -11,7 +11,8 @@
     <RootNamespace>NotLottie.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
     <AssemblyName>NotLottie.iOS</AssemblyName>
-    <NuGetPackageImportStamp></NuGetPackageImportStamp>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
@@ -121,7 +122,10 @@
     <BundleResource Include="Resources\xamarin_logo%402x.png" />
     <BundleResource Include="Resources\xamarin_logo%403x.png" />
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
-    <BundleResource Include="LottieLogo1.json" />
+    <BundleResource Include="Resources\star.json" />
+    <BundleResource Include="Resources\scan_qr_code_success.json" />
+    <BundleResource Include="Resources\rey_updated!.json" />
+    <BundleResource Include="Resources\cycle_animation.json" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -140,5 +144,11 @@
       <Project>{725D297A-23F0-4B11-BFC1-6BD9FEE09DB6}</Project>
       <Name>NotLottie</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\FingerPrint.json" />
+    <BundleResource Include="Resources\LottieLogo1.json" />
+    <BundleResource Include="Resources\material_wave_loading.json" />
+    <BundleResource Include="Resources\progress_bar.json" />
   </ItemGroup>
 </Project>

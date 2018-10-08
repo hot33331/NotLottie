@@ -13,7 +13,14 @@ namespace NotLottie
         {
             InitializeComponent();
 
+            var page = new MyPage();
 
+            MainPage = page;
+            page._show += OnShow;
+        }
+
+        private void OnShow(object sender, EventArgs e)
+        {
             MainPage = new MainPage();
         }
 

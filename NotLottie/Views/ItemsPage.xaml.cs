@@ -1,14 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 using NotLottie.Models;
-using NotLottie.Views;
 using NotLottie.ViewModels;
 
 namespace NotLottie.Views
@@ -23,6 +18,7 @@ namespace NotLottie.Views
             InitializeComponent();
 
             BindingContext = viewModel = new ItemsViewModel();
+           
         }
 
         async void OnItemSelected(object sender, SelectedItemChangedEventArgs args)
@@ -35,6 +31,11 @@ namespace NotLottie.Views
 
             // Manually deselect item.
             ItemsListView.SelectedItem = null;
+        }
+
+        void Handle_OnClick(object sender, System.EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         async void AddItem_Clicked(object sender, EventArgs e)
