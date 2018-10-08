@@ -18,6 +18,7 @@ namespace NotLottie.Views
                 PlaybackFinishedCommand = new Command(_ => _show.Invoke(null, null))
 
             };
+            BackgroundColor = Color.FromRgb(93, 206, 194);
 
         }
                                                     
