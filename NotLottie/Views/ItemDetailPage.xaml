@@ -8,13 +8,16 @@
     x:Name="animationView" 
     Animation="{Binding Item.Lottie}" 
     Loop="true"
-            Speed="{Binding Source={x:Reference slider},
+            Scale="{Binding Source={x:Reference sliderScale},
+                                  Path=Value}}"
+             Speed="{Binding Source={x:Reference sliderSpeed},
                                   Path=Value}}"
     AutoPlay="true"
     OnClick="Handle_OnClick"
     VerticalOptions="FillAndExpand" 
     HorizontalOptions="FillAndExpand" />
-        <Slider Minimum="0.1" Maximum="10" Value="1" x:Name="slider"/>
+        <Slider Minimum="0.1" Maximum="10" Value="1" x:Name="sliderSpeed"/>
+        <Slider Minimum="0.1" Maximum="10" Value="1" x:Name="sliderScale"/>
         <Label Text="Text:" FontSize="Medium" />
         <Label Text="{Binding Item.Text}" FontSize="Small" />
         <Label Text="Description:" FontSize="Medium" />
